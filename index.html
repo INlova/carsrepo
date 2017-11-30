@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<title>3 Musketeers Car Rental</title>
+</head>
+<body>
+	<img alt="3 Ms Rental" height="300" src="https://www.the3musketeers.biz/theme/the-3-musketeers.png" width="250">
+	<h1>Business Name</h1>
+	<p id="name"></p>
+	<h2>Car Types</h2>
+	<h3>Economy Cars</h3>
+	<p id="econa"></p>
+	<p id="econp"></p>
+	<h3>Midsize Cars</h3>
+	<p id="mida"></p>
+	<p id="midp"></p>
+	<h2>Rent a Car</h2>
+	<form id="renterinfo" name="renterinfo">
+		Name: <input id="rname" name="name" type="text" value=""><br>
+		<br>
+		<select id="carchoice" onchange="chooseCar()">
+			<option value="">
+				Choose a Car Type
+			</option>
+			<option value="economy">
+				Economy Car
+			</option>
+			<option value="midsize">
+				Midsize Car
+			</option>
+		</select> <button onclick="rentCar()" type="button">Rent Now!</button>
+	</form><!--show remaining cars available only, NO other info-->
+	<button onclick="update()" type="button">Show Cars In Stock</button> 
+	<script src="object.js">
+	</script>
+</body>
+</html>
